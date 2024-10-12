@@ -592,6 +592,12 @@
                 behavior: 'smooth'
             });
         }
+        window.onload = function () {
+            var labels = document.getElementsByTagName('label');
+            while (labels[0]) {
+                labels[0].remove();  // This removes the first label until none are left
+            }
+        };
     </script>
 
 
