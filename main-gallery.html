@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,13 @@
             cursor: pointer;
             transition: transform 0.2s;
         }
+
         .gallery-image:hover {
             transform: scale(1.05);
         }
-		
-		#scrollUpBtn {
-			text-decoration: none;
+
+        #scrollUpBtn {
+            text-decoration: none;
             position: fixed;
             top: 30px;
             left: 30px;
@@ -34,38 +36,65 @@
         #scrollUpBtn:hover {
             background-color: #555;
         }
-		
+
+        .gallery-image {
+            width: 50%;
+        }
+
+        a {
+            text-decoration: none;
+        }
     </style>
 </head>
+
 <body>
-<a href="index.html" id="scrollUpBtn" title="Go back">←</a>
-<section id="Gallery" class="container mt-2">
+    <a href="index.html" id="scrollUpBtn" title="Go back">←</a>
+    
+    <section id="Gallery" class="container pt-4">
         <h2 class="text-center mb-4">Main Gallery</h2>
-       
     </section>
-	
-    <div class="container my-2">    
+
+    <div class="container text-center my-2">
         <div class="row g-3">
-            <div class="col-md-4">
-                <a href="gallery-RPA.html" title="RPA APIs"><img src="image/main-gallery/1.webp" class="img-fluid gallery-image" alt="Image 2"></a>
+            <div class="col-md-2">
+                <a href="gallery-apps.html" title="RPA APIs"><img src="image/main-gallery/folder.png"
+                        class="img-fluid gallery-image" alt="Image 2">
+                    <p>Arval ACCB RPA Tool</p>
+                </a>
             </div>
-			<div class="col-md-4">
-                <a href="gallery-apps.html" title="Applications"><img src="image/main-gallery/2.webp" class="img-fluid gallery-image" alt="Image 2"></a>
+            <div class="col-md-2">
+                <a href="gallery-apps.html" title="Applications"><img src="image/main-gallery/folder.png"
+                        class="img-fluid gallery-image" alt="Image 2">
+                    <p>Blue Prism Reportin <br>Tool Dev RPA</p>
+                </a>
             </div>
-			<div class="col-md-4">
-                <a href="gallery-lowcode.html" title="Low Code"><img src="image/main-gallery/3.webp" class="img-fluid gallery-image" alt="Image 2"></a>
+            <div class="col-md-2">
+                <a href="gallery-lowcode.html" title="Low Code"><img src="image/main-gallery/folder.png"
+                        class="img-fluid gallery-image" alt="Image 2">
+                    <p>Blue Prism Reportin <br>Tool Web</p>
+                </a>
             </div>
-			<div class="col-md-4">
-                <a href="gallery-lowcode.html" title="Applications & Apis"><img src="image/main-gallery/4.webp" class="img-fluid gallery-image" alt="Image 2"></a>
+            <div class="col-md-2">
+                <a href="gallery-lowcode.html" title="Applications & Apis"><img src="image/main-gallery/folder.png"
+                        class="img-fluid gallery-image" alt="Image 2">
+                    <p>DocuSign</p>
+                </a>
             </div>
-            <div class="col-md-4">
-                <a href="gallery-procus.html" title="Factory Automation"><img src="image/main-gallery/5.webp" class="img-fluid gallery-image" alt="Image 1"></a>
-            </div>			
-            <div class="col-md-4">
-                <a href="gallery-aboutme.html" title="Something More About Me"><img src="image/main-gallery/6.webp" class="img-fluid gallery-image" alt="Image 3"></a>
+            <div class="col-md-2">
+                <a href="gallery-procus.html" title="Factory Automation"><img src="image/main-gallery/folder.png"
+                        class="img-fluid gallery-image" alt="Image 1">
+                    <p>Jira</p>
+                </a>
+            </div>
+            <div class="col-md-2">
+                <a href="gallery-aboutme.html" title="Something More About Me"><img src="image/main-gallery/folder.png"
+                        class="img-fluid gallery-image" alt="Image 3">
+                    <p>Salesforce</p>
+                </a>
             </div>
         </div>
     </div>
 
 </body>
+
 </html>
