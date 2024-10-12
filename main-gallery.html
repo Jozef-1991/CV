@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jozef Sovič | Resume Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .gallery-image {
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .gallery-image:hover {
+            transform: scale(1.05);
+        }
+		
+		#scrollUpBtn {
+			text-decoration: none;
+            position: fixed;
+            top: 30px;
+            left: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #2c3e50;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50px;
+            font-size: 18px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        #scrollUpBtn:hover {
+            background-color: #555;
+        }
+		
+    </style>
+</head>
+<body>
+<a href="index.html" id="scrollUpBtn" title="Go back">←</a>
+<section id="Gallery" class="container mt-2">
+        <h2 class="text-center mb-4">Main Gallery</h2>
+       
+    </section>
+	
+    <div class="container my-2">    
+        <div class="row g-3">
+            <div class="col-md-4">
+                <a href="gallery-RPA.html" title="RPA APIs"><img src="image/main-gallery/1.webp" class="img-fluid gallery-image" alt="Image 2"></a>
+            </div>
+			<div class="col-md-4">
+                <a href="gallery-apps.html" title="Applications"><img src="image/main-gallery/2.webp" class="img-fluid gallery-image" alt="Image 2"></a>
+            </div>
+			<div class="col-md-4">
+                <a href="gallery-lowcode.html" title="Low Code"><img src="image/main-gallery/3.webp" class="img-fluid gallery-image" alt="Image 2"></a>
+            </div>
+			<div class="col-md-4">
+                <a href="gallery-lowcode.html" title="Applications & Apis"><img src="image/main-gallery/4.webp" class="img-fluid gallery-image" alt="Image 2"></a>
+            </div>
+            <div class="col-md-4">
+                <a href="gallery-procus.html" title="Factory Automation"><img src="image/main-gallery/5.webp" class="img-fluid gallery-image" alt="Image 1"></a>
+            </div>			
+            <div class="col-md-4">
+                <a href="gallery-aboutme.html" title="Something More About Me"><img src="image/main-gallery/6.webp" class="img-fluid gallery-image" alt="Image 3"></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
