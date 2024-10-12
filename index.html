@@ -1,17 +1,600 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Comming Soon</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jozef Sovič | Resume</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f9fc;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .jumbotron {
+            background-color: #2c3e50;
+            color: white;
+            padding: 50px;
+            border-radius: 20px;
+        }
+
+        .jumbotron h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        .jumbotron p {
+            font-size: 1.2rem;
+        }
+
+        .album {
+            padding: 50px 0;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        /* Scroll-up button styles */
+        #scrollUpBtn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: none;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #2c3e50;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50px;
+            font-size: 18px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        #scrollUpBtn:hover {
+            background-color: #555;
+        }
+
+        .custom-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 12px;
+            border-radius: 5px;
+        }
+
+        .showpressmouse {
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
 
-<div class="container">
-  <h1>Comming Soon</h1>
-</div>
+    <!-- Jumbotron Header Section -->
+    <header>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Ing. Jozef Sovič</h1>
+                <p>Low Code Developer | Transforming ideas into applications: fast and code-light.</p>
+                <a href="#contact" class="btn btn-light btn-lg">Contact Me</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="container mt-5">
+        <h2 class="text-center mb-4">About Me</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-3 justify-content-end">
+                <img src="image/webpage/LJa.jpg" class="img-fluid rounded d-block m-auto" alt="Jozef Sovič">
+            </div>
+            <div class="col-md-8 p-4 text-start">
+                <p>I am a highly motivated and results-oriented professional with 8 years of experience in automation
+                    and computer science. I consider myself a versatile individual; my creativity and positive outlook
+                    inspire me to accept challenges while actively looking for new opportunities for personal growth. A
+                    lifelong passion for automation and computer science drives my constant desire to expand my
+                    knowledge and skills. I relish the chance to explore uncharted territory, immerse myself in
+                    different cultures and connect with people from all walks of life.</p>
+                <BR>
+                <h3 class="text-center mb-4">More Information</h3>
+                <p class="text-center mb-4">Discover more about my skills, interests, and professional background.</p>
+                <div class="text-center">
+                    <a href="main-gallery.html" class="btn btn-primary">Discover</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section as Album -->
+    <section id="skills" class="album py-4 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Skills</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Project Management</h5>
+                            <p class="card-text">Experienced in leading cross-functional teams in automation projects,
+                                ensuring timely delivery and alignment with business objectives. Familiar with Agile
+                                methodologies to enhance project adaptability.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Problem Solving and Analytical Skills</h5>
+                            <img src="image\webpage\2.png" width="50" height="50" class="img-fluid rounded-end"
+                                style="position:absolute; bottom:0; right:0; opacity: 0.5; z-index:0;">
+                            <p class="card-text">Strong analytical skills with a focus on identifying process
+                                inefficiencies and developing effective automation strategies. Able to troubleshoot
+                                complex technical issues effectively.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Data Analysis and Reporting</h5>
+                            <p class="card-text">Skilled in leveraging data analytics tools to gather insights and
+                                create actionable reports, supporting data-driven decision-making processes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Communication and Collaboration</h5>
+                            <p class="card-text">Excellent interpersonal skills, with experience collaborating with
+                                stakeholders across various departments to understand requirements and deliver tailored
+                                solutions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Continuous Improvement</h5>
+                            <p class="card-text">Committed to continuous improvement practices, always seeking
+                                opportunities to enhance processes and technologies for better performance and
+                                efficiency.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><i class="bi bi-robot"></i> Robotic Process Automation</h5>
+                            <img src="image\webpage\1.png" width="100" height="100" class="img-fluid rounded-end"
+                                style="position:absolute; bottom:0; right:0; opacity: 0.5; z-index:0;">
+                            <p class="card-text">Skilled in designing and deploying RPA solutions using Blue Prism,
+                                focusing on automating repetitive tasks to improve efficiency and reduce errors.
+                                Proficient in API integrations and utilizing SQL for data management.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">APIs</h5>
+                            <img src="image\webpage\api.png" width="80" height="80" class="img-fluid rounded-end"
+                                style="position:absolute; bottom:0; right:0; opacity: 0.5; z-index:0;">
+                            <p class="card-text">Proficient in developing and integrating APIs (REST, SOAP) for seamless
+                                data exchange between systems. Experienced in creating custom API solutions using
+                                OpenAPI specifications to enhance application interoperability.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">SQL</h5>
+                            <img src="image\webpage\sql.png" width="70" height="70" class="img-fluid rounded-end"
+                                style="position:absolute; bottom:0; right:0; opacity: 0.5; z-index:0;">
+                            <p class="card-text">Skilled in using SQL for database management, data manipulation, and
+                                querying. Experienced in optimizing SQL queries for performance and ensuring data
+                                integrity within automation processes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">C#, VB, VB.Net</h5>
+                            <p class="card-text">Proficient in developing applications using C#, WInUi3 framework, with
+                                experience in building robust solutions. Skilled in implementing object-oriented
+                                programming principles and utilizing .NET frameworks to enhance application performance
+                                and functionality.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">HTML and Bootstrap</h5>
+                            <p class="card-text">Proficient in writing clean and semantic HTML to create structured web
+                                content, utilizing HTML5 features to enhance user experience and accessibility. Skilled
+                                in using Bootstrap for responsive web design, enabling the development of
+                                mobile-friendly websites with consistent layouts and styling, and customizing Bootstrap
+                                components to align with branding and functional requirements.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Honeywell</h5>
+                            <img src="image\webpage\plc.png" width="100" height="100" class="img-fluid rounded-end"
+                                style="position:absolute; bottom:8px; right:8px; opacity: 0.5; z-index:0;">
+                            <p class="card-text">Experienced in configuring and programming Honeywell control systems
+                                for automation and process optimization in industrial settings. Knowledgeable in
+                                integrating Honeywell systems with other technologies to enhance operational efficiency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Siemens</h5>
+                            <img src="image\webpage\plc3.png" width="100" height="100" class="img-fluid rounded-end"
+                                style="position:absolute; bottom:0; right:0; opacity: 0.5; z-index:0;">
+                            <p class="card-text">Skilled in programming and troubleshooting Siemens PLCs and SCADA
+                                systems. Familiar with industrial automation solutions, ensuring reliable and efficient
+                                operation of manufacturing processes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section using Cards -->
+    <section id="experience" class="container mt-5">
+        <h2 class="text-center mb-4">Experience</h2>
+        <div class="row row-cols-1 row-cols-md-1 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Senior RPA Developer at ARVAL Competence Center Bratislava</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">2022 – 2024</h6>
+                        <img src="image\webpage\1.png" width="300" height="300" class="img-fluid rounded-end"
+                            style="position:absolute; bottom:0; right:0; opacity: 0.5; z-index:0;">
+                        <p class="card-text">
+                        <p>
+                            Led the design, development, and deployment of advanced robotic process automation (RPA)
+                            solutions using Blue Prism. Collaborated with business stakeholders to identify automation
+                            opportunities and deliver scalable, high-impact RPA implementations that improved efficiency
+                            and reduced operational costs.
+                        </p>
+                        Key Responsibilities:
+                        <ul>
+                            <li>Architected, developed, and maintained complex Blue Prism automation processes, ensuring
+                                robustness and scalability in high-demand environments.</li>
+                            <li>Integrated APIs such as Jira, Salesforce, and DocuSign with Blue Prism automations using
+                                REST API and SOAP protocols.</li>
+                            <li>Utilized SQL for database interactions within automation processes, ensuring efficient
+                                data handling and management.</li>
+                            <li>Collaborated with business analysts to gather requirements, assess processes for
+                                automation feasibility, and provide technical expertise in process optimization.</li>
+                            <li>Led a team of RPA developers, ensuring adherence to best practices, code quality, and
+                                efficient delivery of automation solutions within deadlines.</li>
+                            <li>Managed configuration settings and customized Blue Prism environments to optimize
+                                performance and meet the evolving needs of the organization.</li>
+                            <li>Designed and implemented reusable automation frameworks to improve development
+                                efficiency and process standardization across multiple projects.</li>
+                            <li>Performed thorough testing and debugging of Blue Prism processes to ensure flawless
+                                execution, addressing edge cases and minimizing downtime.</li>
+                            <li>Provided mentoring and training to junior RPA developers, fostering team growth and
+                                knowledge sharing on advanced Blue Prism features and functionality.</li>
+                            <li>Developed several SQL scripts to enhance the design and functionality of the Blue Prism
+                                Reporting tool that I created.</li>
+                            <li>Developed a C# application for extracting project data and automating the code review
+                                process.</li>
+                            <li>Developed custom API solutions with OpenAPI specifications to connect Blue Prism to
+                                external applications and systems, enhancing process automation and system
+                                interoperability.</li>
+                            <li>Participated in Profesia Days, exploring new people for our job opportunities.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">External Consultant Analyst at KPMG Slovensko spol.</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">2021 – 2022</h6>
+                        <img src="image\webpage\3.png" width="200" height="200" class="img-fluid rounded-end"
+                            style="position:absolute; bottom:0; right:0; opacity: 0.5; z-index:0;">
+                        <p class="card-text">
+                        <p>
+                            Provided comprehensive automation solutions and internal development support across various
+                            platforms and technologies to optimize business processes for multiple teams within the
+                            organization. Leveraged RPA and low-code platforms to drive efficiency and enhance workflow
+                            automation.
+                        </p>
+                        Key Responsibilities:
+                        <ul>
+                            <li>Internal support for VB.NET & MS Excel Macros, Excel M language (Power Query).</li>
+                            <li>Implemented low-code development using Power Platform (PowerApps, Power Automate) to
+                                improve operational efficiency across departments.</li>
+                            <li>Internal development with UiPath to automate various routine business processes,
+                                reducing manual workload.</li>
+                            <li>Supported SharePoint migrations using ShareGate, Low code PowerShell scriptiong.</li>
+                            <li>External RPA development using Blue Prism to create, test, and deploy automation
+                                solutions for external clients, enhancing process efficiency and cost savings.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Senior Control systems engineer, Senior Engineer at PROCUS s.r.o.</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">2017 – 2022</h6>
+                        <img src="image\webpage\plc2.png" width="200" height="200" class="img-fluid rounded-end"
+                            style="position:absolute; bottom:0; right:0; opacity: 0.5; z-index:0;">
+                        <p class="card-text">
+                        <p>
+                            As a Senior Control Systems Engineer with 5 years of intensive experience, I have been
+                            responsible
+                            for team leading, designing, programming, and implementing advanced automation systems for
+                            industrial
+                            manufacturing processes. I have successfully collaborated with cross-functional teams,
+                            ensuring the seamless integration of hardware and software for optimal production
+                            performance.
+                        </p>
+                        Key Responsibilities:
+                        <ul>
+                            <li>Design, program, and optimize PLC and HMI systems (Siemens, Honeywell) for automotive
+                                and industrial production lines.</li>
+                            <li>Develop SCADA systems (WinCC, Ignition) to monitor and control complex manufacturing
+                                processes, ensuring efficiency and safety.</li>
+                            <li>Lead commissioning and startup activities, including system integration,
+                                troubleshooting, and fine-tuning control systems to meet operational specifications.
+                            </li>
+                            <li>Collaborate with mechanical, electrical, and software teams to ensure smooth
+                                communication between subsystems.</li>
+                            <li>Analyze system performance and troubleshoot issues to minimize downtime and optimize
+                                productivity.</li>
+                            <li>Provide on-site technical support for automation systems and process improvement
+                                initiatives.</li>
+                            <li>Prepare detailed project documentation, including technical drawings, user manuals, and
+                                test protocols.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col showpressmouse" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">List of Freelancer Development</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">2014 – 2017</h6>
+                        <p class="card-text">(Press to show more.)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Aditional Freelancer Development</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row row-cols-1 row-cols-md-1 g-4">
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Control systems engineer, Engineer at Othua s.r.o. (Trnavská
+                                        automobilka)</h5>
+                                    <p class="card-text">
+                                    <p>Programming of control systems and commissioning of automotive production line
+                                        with feeding and welding robots. (launch of a new car model).</p>
+                                    Technologies used:
+                                    <ul>
+                                        <li>Low code control systems: Siemens S7</li>
+                                        <li>Webpage WinCC Flexible</li>
+                                    </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Web application Developer at Stellantis (Trnavská
+                                        automobilka)</h5>
+                                    <p class="card-text">
+                                    <p>
+                                        Design & Developed an information system for managing the final quality testing
+                                        of manufactured cars, with automatic report sending to designated leaders upon
+                                        detection of critical defects.
+                                    </p>
+                                    Technologies used:
+                                    <ul>
+                                        <li>HTML, PHP, Bootstrap 3</li>
+                                        <li>Custom light MVC (Model View Controller) </li>
+                                    </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title">Web application Developer at OKIS s.r.o.</h5>
+                                    <p class="card-text">
+                                    <p>
+                                        Design and implementation of information systems for Student Dormitory
+                                        Management bookings, including individual bed reservations, automated sending,
+                                        and generation of PDF contractual documents for students accommodated at Miloš
+                                        Uhra Dormitory.
+                                    </p>
+                                    Technologies used:
+                                    <ul>
+                                        <li>HTML, PHP, Bootstrap 3</li>
+                                        <li>Yii2 Framework: Backend & Frontend</li>
+                                    </ul>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education Section -->
+    <section id="education" class="container mt-5">
+        <h2 class="text-center mb-4">Education</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Ing. in Automation and Informatization of Industrial Processes</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Slovak University of Technology, Faculty of Materials
+                            Science and Technology, Trnava</h6>
+                        <img src="image\webpage\diplom.png" width="100" height="100" class="img-fluid rounded-end"
+                            style="position:absolute; bottom:0; right:0; opacity: 0.5; z-index:0;">
+                        <p class="card-text">Graduated: 2017</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Bc. in Applied Informatics and Automation in Industry</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Slovak University of Technology, Faculty of Materials
+                            Science and Technology, Trnava</h6>
+                        <p class="card-text">Graduated: 2015</p>
+                    </div>
+                </div>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Jesenského Secondary Vocational School</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Manager of Sales and Operations in the Automotive
+                            Industry</h6>
+                        <p class="card-text">Graduated: 2012</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mt-5">
+        <h2 class="text-center mb-4">Get in Touch</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <div class="card p-2 shadow-lg border-1">
+                    <div class="card-body">
+                        <table class="table table text-center">
+                            <tbody>
+                                <tr>
+                                    <td><i class="bi bi-envelope-fill fs-3"></i></td>
+                                    <td>Email:</td>
+                                    <td><a href="mailto:sovicjozef@gmail.com"
+                                            class="btn btn-link">sovicjozef@gmail.com</a></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="bi bi-phone fs-3"></i></td>
+                                    <td>Phone:</td>
+                                    <td><a href="callto:+421944288256" class="btn btn-link">+421 944 288 256</a></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="bi bi-linkedin fs-3"></i></td>
+                                    <td>LinkedIn:</td>
+                                    <td><a href="#" class="btn btn-link">Your LinkedIn</a></td>
+                                </tr>
+                                <tr>
+                                    <td><i class="bi bi-github fs-3"></i></td>
+                                    <td>GitHub:</td>
+                                    <td><a href="#" class="btn btn-link">Your GitHub</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Jozef Sovič. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Scroll Up Button -->
+    <button onclick="scrollToTop()" id="scrollUpBtn" title="Go to top">↑</button>
+
+    <!-- Bootstrap JS and Scroll-to-Top JavaScript -->
+    <script>
+        // Show button when user scrolls down
+        window.onscroll = function () {
+            toggleScrollUpButton();
+        };
+
+        function toggleScrollUpButton() {
+            let scrollUpBtn = document.getElementById("scrollUpBtn");
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                scrollUpBtn.style.display = "block";
+            } else {
+                scrollUpBtn.style.display = "none";
+            }
+        }
+
+        // Scroll to the top when the button is clicked
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
 
 </body>
+
 </html>
