@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 5 Left Side Menu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+      position: relative;
+    }
+    #leftMenu {
+      height: 100vh;
+    }
+    #section1, #section2, #section3, #section4, #section5 {
+      display: none;
+    }
+    #scrollUpBtn {
+            text-decoration: none;
+            position: fixed;
+            top: 30px;
+            left: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #2c3e50;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50px;
+            font-size: 18px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row py-2"></div>
+    <div class="row">
+      <!-- Left Side Menu -->
+      <nav id="leftMenu" class="col-md-3 col-lg-2 d-md-block  sidebar">
+        <div class="position-sticky pt-3">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link" id="scrollUpBtn" href="main-gallery.html"> ← </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section1">Welcome</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section2">Salesforce API</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section3">Salesfroce DEV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section4">DocuSign</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link" href="#section5">Jira</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 offset-md-3">
+        <div id="section1" class="pt-5">
+          <h2>Welcome</h2>
+          <p>Please select one of the five section on the left side.</p>
+        </div>
+        <div id="section2" class="pt-5">
+          <h2>Salesforce API</h2>
+          <img src="image/main-gallery/Salesforce/Salesforce - 01.png" class="img-fluid gallery-image" alt="">
+		  <img src="image/main-gallery/Salesforce/Salesforce - 02.png" class="img-fluid gallery-image" alt="">
+		  <img src="image/main-gallery/Salesforce/Salesforce - 03.png" class="img-fluid gallery-image" alt="">
+		  <img src="image/main-gallery/Salesforce/Salesforce - 04.png" class="img-fluid gallery-image" alt=""><hr>
+		  <img src="image/main-gallery/Salesforce/Salesforce - 05.png" class="img-fluid gallery-image" alt=""><hr>
+		  <img src="image/main-gallery/Salesforce/Salesforce - 06.png" class="img-fluid gallery-image" alt=""><hr>
+		  <img src="image/main-gallery/Salesforce/Salesforce - 07.png" class="img-fluid gallery-image" alt="">
+        </div>
+        <div id="section3" class="pt-5">
+          <h2>Salesfroce DEV</h2>
+          <img src="image/main-gallery/Salesforce/Salesforce - DEV - 02.png" class="img-fluid gallery-image" alt="">
+		  <img src="image/main-gallery/Salesforce/Salesforce - DEV - 03.png" class="img-fluid gallery-image" alt="">
+		  <img src="image/main-gallery/Salesforce/Salesforce - DEV - 04.png" class="img-fluid gallery-image" alt="">
+		  <img src="image/main-gallery/Salesforce/Salesforce - DEV - 05.png" class="img-fluid gallery-image" alt="">
+        </div>
+        <div id="section4" class="pt-5">
+          <h2>DocuSign</h2>
+          <img src="image/main-gallery/DocuSign/DocuSign - 01.png" class="img-fluid gallery-image" alt="">
+		  <img src="image/main-gallery/DocuSign/DocuSign - 02.png" class="img-fluid gallery-image" alt=""><hr>
+		  <img src="image/main-gallery/DocuSign/DocuSign - 03.png" class="img-fluid gallery-image" alt="">
+		  <img src="image/main-gallery/DocuSign/DocuSign - 04.png" class="img-fluid gallery-image" alt="">
+		  <img src="image/main-gallery/DocuSign/DocuSign - 05.png" class="img-fluid gallery-image" alt="">
+		  <img src="image/main-gallery/DocuSign/DocuSign - 06.png" class="img-fluid gallery-image" alt="">
+		  <img src="image/main-gallery/DocuSign/DocuSign - 07.png" class="img-fluid gallery-image" alt=""><hr>
+		  <img src="image/main-gallery/DocuSign/DocuSign - 08.png" class="img-fluid gallery-image" alt=""><hr>
+		  <img src="image/main-gallery/DocuSign/DocuSign - 09.png" class="img-fluid gallery-image" alt="">
+        </div>
+		<div id="section5" class="pt-5">
+          <h2>Jira</h2>
+		  <img src="image/main-gallery/Jira/Jira - 01.png" class="img-fluid gallery-image" alt="">
+          <img src="image/main-gallery/Jira/Jira - 02.png" class="img-fluid gallery-image" alt="">
+		  <img src="image/main-gallery/Jira/Jira - 03.png" class="img-fluid gallery-image" alt="">
+		  <img src="image/main-gallery/Jira/Jira - 04.png" class="img-fluid gallery-image" alt="">
+		  <img src="image/main-gallery/Jira/Jira - 05.png" class="img-fluid gallery-image" alt="">
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Initially hide all sections
+      $('#section1, #section2, #section3, #section4, #section5').hide();
+      
+      // Show section 1 by default
+      $('#section1').show();
+      
+      // Add click event to nav links
+      $('a.nav-link').click(function(e){
+        e.preventDefault();
+        var target = $(this).attr('href');
+        // Hide all sections
+        $('#section1, #section2, #section3, #section4, #section5').hide();
+        // Show the target section if it is an internal link
+        if (target.startsWith('#')) {
+          $(target).show();
+        } else {
+          window.location.href = target;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
